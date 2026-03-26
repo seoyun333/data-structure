@@ -1,14 +1,11 @@
-// listS.h 내용
 #ifndef LISTS_H
 #define LISTS_H
 
 #define MAX 10
 
-// 함수의 원형(Prototype) 선언
 int insertElement(int L[], int size, int x);
 int deleteElement(int L[], int size, int x);
 
-// 삽입 함수 구현
 int insertElement(int L[], int size, int x) {
     int i, move = 0;
     for (i = 0; i < size; i++) {
@@ -22,7 +19,6 @@ int insertElement(int L[], int size, int x) {
     return move;
 }
 
-// 삭제 함수 구현
 int deleteElement(int L[], int size, int x) {
     int i, move = 0;
     for (i = 0; i < size; i++) {
